@@ -36,5 +36,6 @@ d3.selectAll(".filter").on("change", applyFilters);
 
 // Complete the event handler function for the form
 function filterTable() {
-    
+    // Prevent the page from refreshing
+    d3.event.preventDefault();
 }
