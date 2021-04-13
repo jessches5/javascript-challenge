@@ -15,6 +15,8 @@ function buildTable(tableData) {
 }
 
 var filters = {}
-function applyFilters( {
+function applyFilters() {
+
+    var inputElement = d3.select(this).select("input");
     
 })
