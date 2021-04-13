@@ -33,3 +33,8 @@ filterTable()
 
 // listener
 d3.selectAll(".filter").on("change", applyFilters);
+
+// Complete the event handler function for the form
+function filterTable() {
+    
+}
