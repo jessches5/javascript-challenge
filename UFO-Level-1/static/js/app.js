@@ -13,3 +13,8 @@ function buildTable(tableData) {
     });
  });     
 }
+
+var filters = {}
+function applyFilters( {
+    
+})
