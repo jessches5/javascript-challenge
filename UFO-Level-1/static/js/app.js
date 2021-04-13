@@ -20,4 +20,13 @@ function applyFilters() {
     var inputElement = d3.select(this).select("input");
     var elementValue = inputElement.property("value");
     var selectedID = inputElement.attr("id");
-})
+    
+    if (elementValue) {
+        filters[selectedID] = elementValue;
+    }
+    else {
+        delete filters[selectedID];
+    }
+
+filterTable()
+}
