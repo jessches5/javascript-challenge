@@ -7,7 +7,7 @@ var tbody = d3.select("tbody");
 function buildTable(tableData) {
     tableData.forEach((ufoReport) => {
         var row = tbody.append("tr");
-        Object.defineProperties(ufoReport).forEach(([key, value]) => {
+        Object.entries(ufoReport).forEach(([key, value]) => {
             var cell = row.append("td");
             cell.text(value);
     });
@@ -44,4 +44,7 @@ function filterTable() {
     Object.entries(filters).forEach(([key,value]) => {
         filteredData = filteredData.filter(ufo => ufo[key] === value);
     })
+
+tbody.html("")
+    buildTable(filteredData);
 }
