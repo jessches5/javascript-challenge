@@ -40,4 +40,8 @@ function filterTable() {
     d3.event.preventDefault();
 
     let filteredData = tableData;
+
+    Object.entries(filters).forEach(([key,value]) => {
+        filteredData = filteredData.filter(ufo => ufo[key] === value);
+    })
 }
