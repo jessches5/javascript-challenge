@@ -38,4 +38,6 @@ d3.selectAll(".filter").on("change", applyFilters);
 function filterTable() {
     // Prevent the page from refreshing
     d3.event.preventDefault();
+
+    let filteredData = tableData;
 }
