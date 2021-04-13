@@ -30,3 +30,6 @@ function applyFilters() {
 
 filterTable()
 }
+
+// listener
+d3.selectAll(".filter").on("change", applyFilters);
