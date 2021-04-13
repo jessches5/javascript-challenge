@@ -18,5 +18,5 @@ var filters = {}
 function applyFilters() {
 
     var inputElement = d3.select(this).select("input");
-    
+    var elementValue = inputElement.property("value");
 })
